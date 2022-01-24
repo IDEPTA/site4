@@ -445,7 +445,6 @@ footer img{
 
 	/*Навигация*/
 	.navigation_block{
-		border: 1px solid red;
 		width: 80%;
 	}
 	.navigation_block:nth-child(2),
