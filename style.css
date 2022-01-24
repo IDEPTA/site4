@@ -340,6 +340,9 @@ footer img{
 	margin: 25px;
 }
 @media(max-width: 900px){
+	*{
+		margin: 0px;
+	}
 /*Заголовок*/
 	.title_block{
 		margin-top: 20%;
@@ -436,7 +439,7 @@ footer img{
 		margin-bottom: 10px;
 	}
 	.block_row img{
-		width: 300px;
+		width: 80%;
 	}
 	.text_block{
 		width: 80%;
