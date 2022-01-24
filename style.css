@@ -422,12 +422,7 @@ footer img{
 		background-size: cover;
 		background-position: center;
 	}
-	/*Навигация*/
-	.navigation_block:nth-child(2),
-	.navigation_block:nth-child(3),
-	.navigation_block:nth-child(4){
-		display: none;
-	}
+
 	/*Профсоюз*/
 	.prof_block_title p:nth-child(1){
 		width: 100%;
@@ -447,6 +442,17 @@ footer img{
 	.text_block{
 		width: 80%;
 	}	
+
+	/*Навигация*/
+	.navigation_block{
+		border: 1px solid red;
+		width: 80%;
+	}
+	.navigation_block:nth-child(2),
+	.navigation_block:nth-child(3),
+	.navigation_block:nth-child(4){
+		display: none;
+	}
 	/*Киберспорт*/
 	.cybersport_block p{
 		width: 90%;
