@@ -419,6 +419,12 @@ footer img{
 		background-size: cover;
 		background-position: center;
 	}
+	/*Навигация*/
+	.navigation_block:nth-child(2),
+	.navigation_block:nth-child(3),
+	.navigation_block:nth-child(4){
+		display: none;
+	}
 	/*Профсоюз*/
 	.prof_block_title p:nth-child(1){
 		width: 100%;
@@ -454,6 +460,11 @@ footer img{
 	.sport_card{
 		margin: 10px 0px;
 		width: 90%;
+	}
+	.sport_card:nth-child(2),
+	.sport_card:nth-child(3),
+	.sport_card:nth-child(4){
+		display: none;
 	}
 	/*Вопрос-Ответ*/
 	.question,.reply{
