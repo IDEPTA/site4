@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+	color: white;
+	font-family: 'Roboto';
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color:#0B172A;
+	overflow-x: hidden;
+
+}
+/*
+#BC4123 - Оранжевый
+#0B172A - Синий
+#463940 - Серый
+*/
+/*Заголовки*/
+.text_title_light{
+	font-size: 24px;
+	color:#BC4123;
+	font-weight: 300;
+}
+.text_title_bold{
+	font-size: 24px;
+	color:#BC4123;
+	font-weight: 300;
+}
+/*Цвет*/
+.orange_text{
+	color:#BC4123;
+}
+/*Заголовок*/
+.line{
+	width: 80%;
+	border-radius: 5px;
+	height: 2px;
+	background-color: #BC4123;
+}
+.title_block{
+	margin: 5% 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.title_block_text{
+	font-size: 22px;
+	text-align: center;
+	border: 2px solid #BC4123;
+	width: 220px;
+	padding: 15px 0px;
+	margin: 20px 0px;
+}
+.title_text_big{
+	font-size: 48px;
+}
+.title_text_midle{
+	font-size: 30px;
+}
+/*Кнопка*/
+.button{
+	width: 10%;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid #BC4123;
+	padding: 20px 0px;
+	border-radius: 50px;
+	box-shadow: 0px 10px 50px black;
+	transition: 0.4s;
+}
+.button:hover{
+	background-color:#BC4123;
+	color: black;
+	transition: 0.4s;
+}
+/*Навигация*/
+nav{
+	box-shadow: 0px 10px 10px black;	
+	width: 100%;
+	background-color:#0B172A;
+	position: fixed;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+}
+nav a{
+	position: relative;
+	text-decoration: none;
+	margin: 25px 30px;
+}
+nav a::before{
+	content: "";
+	bottom: -3px;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color:#BC4123;
+	transition: 0.2s;
+	transform: scaleX(0);
+}
+nav a:hover{
+	color:#BC4123;
+	transition: 0.2s;
+}
+nav a:hover:before{
+	transform: scaleX(1);
+}
+/*Бургер меню*/
+.burger{
+	display: none;
+	position: relative;
+	width: 50px;
+	height: 50px;
+}
+.burger_line{
+	transition: 0.4s;
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: white;
+}
+.burger_line:nth-child(1){
+	top: 25%;
+	transition: 0.4s;
+}
+.burger_line:nth-child(2){
+	top: 50%;
+}
+.burger_line:nth-child(3){
+	top: 50%;
+}
+.burger_line:nth-child(4){
+	top: 75%;
+	transition: 0.4s;
+}
+/*Фоновый видос*/
+.video_bg_block{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.video_bg{
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.video_bg::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.video{
+	width: 100%;
+}
+.video_bg_content{
+	z-index: 5;
+	text-align: center;
+}
+
+
+/*Профсоюзы*/
+.prof_block{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.prof_block .button{
+	margin-top: 5%;
+}
+.prof_block_title{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.prof_block_title p{
+	width: 55%;
+	font-size: 30px;
+}
+.block_row{
+	margin: 25px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.block_row .text_title_bold{
+	margin-bottom: 10px;
+}
+.block_row img{
+	width: 20%;
+}
+.text_block{
+	width: 450px;
+	margin: 25px;
+}
+/*Навигация*/
+.navigation{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.navigation_block{
+	margin: 20px;
+	width: 300px;
+}
+.navigation_blocks{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.navigation_block img{
+	width: 100%;
+}
+.navigation_block p{
+	font-weight: 300;
+	margin: 10px 0px;
+}
+/*Киберспорт*/
+.cybersport_block{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cybersport_block p{
+	margin: 10px 0px;
+	width: 45%;
+	text-align: left;
+}
+.swiper{
+	width: 55%;
+	height: 400px;
+}
+.swiper-slide{
+	display: flex;
+	justify-content: center;
+}
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after{
+	font-size: 45px;
+	color: #BC4123;
+}
+.swiper-slide img{
+	object-fit: cover;
+	width: 80%;
+	height: 350px;
+}
+
+.swiper .swiper-pagination-bullet{
+	opacity: 1;
+	background-color: white;
+}
+.swiper .swiper-pagination-bullet-active{
+	background-color:#BC4123;
+}
+.cybersport_block .button{
+	margin-top: 5%;
+}
+/*Спорт*/
+.sport_block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.sport_block .button{
+	margin-top: 5%;
+}
+.sport_cards{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.sport_card{
+	box-shadow: 0px 15px 15px black;
+	width: 320px;
+	margin: 20px;
+}
+.sport_card p{
+	margin: 15px;
+}
+.sport_card img{
+	width: 100%;
+}
+/*Вопрос-Ответ*/
+.questions_blocks{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.question,.reply{
+	margin: 15px 0px;
+	width: 35%;
+	padding:30px;
+	border-radius: 40px;
+}
+.question{
+	background-color:#BC4123;
+	color: white;
+}
+.reply{
+	color: black;
+	background-color: white;
+}
+/*Подвал*/
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+footer .line{
+	margin-top: 5%;
+	margin-bottom: 15px;
+}
+.footer_links a{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.footer_links a{
+	text-decoration: none;
+	margin: 5px 25px;
+}
+footer img{
+	margin: 25px;
+}
+@media(max-width: 900px){
+/*Заголовок*/
+	.title_block{
+		margin-top: 20%;
+	}
+	.line{
+		width: 90%;
+	}	
+/*Кнопка*/
+	.button{
+		width: 50%;
+	}
+/*Навигационная менюшка*/
+	body{
+		overflow-x: hidden;
+	}
+	nav{
+		height: 60px;
+		overflow-y: hidden;
+		box-shadow: 0px 10px 10px black;	
+		width: 100%;
+		background-color:#0B172A;
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: 0.4s;
+	}	
+	.nav_active{
+		height: 450px;
+		transition: 0.4s;
+	}
+	.active_links{
+		display: inline;
+	}
+	nav a{
+		display: none;
+	}	
+	.burger{
+		top: 0px;
+		right: 20px;
+		position: absolute;
+		display: block;
+	}
+	.burger_line_active_one{
+		transform: rotate(45deg);
+		transition: 0.4s;
+	}
+	.burger_line_active_two{
+		transform: rotate(-45deg);
+		transition: 0.4s;
+	}
+	.burger_line_hidden{
+		transition: 0.4s;
+		opacity: 0;
+		
+	}
+	video{
+		display: none;
+	}
+	.video_bg_content{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+	.video_bg::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		background-image: url(img/mainbg.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	/*Профсоюз*/
+	.prof_block_title p:nth-child(1){
+		width: 100%;
+	}
+	.prof_block_title p:nth-child(2){
+		display: none;
+	}
+	.block_row .text_title_bold{
+		margin-bottom: 10px;
+	}
+	.block_row img{
+		width: 300px;
+	}
+	.text_block{
+		width: 80%;
+	}	
+	/*Киберспорт*/
+	.cybersport_block p{
+		width: 90%;
+	}	
+	.swiper{
+		width: 100%;
+	}
+	.swiper-slide img{
+		border-radius: 15px;
+		width: 90%;
+	}
+	.swiper .swiper-button-prev::after,
+	.swiper .swiper-button-next::after{
+		display: none;
+	}	
+	/*Спорт*/
+	.sport_card{
+		margin: 10px 0px;
+		width: 90%;
+	}
+	/*Вопрос-Ответ*/
+	.question,.reply{
+		margin: 10px 0px;
+		width: 75%;
+		padding:25px;
+		border-radius: 25px;
+	}
+	/*Подвал*/
+	.footer_links a{
+		text-decoration: none;
+		margin: 25px 0px;
+	}
+}
