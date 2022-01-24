@@ -331,10 +331,11 @@ footer .line{
 	margin-top: 5%;
 	margin-bottom: 15px;
 }
-.footer_links a{
+.footer_links{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	flex-direction: row;
 }
 .footer_links a{
 	text-decoration: none;
@@ -469,6 +470,6 @@ footer img{
 	/*Подвал*/
 	.footer_links a{
 		text-decoration: none;
-		margin: 25px 0px;
+		margin: 25px;
 	}
 }
